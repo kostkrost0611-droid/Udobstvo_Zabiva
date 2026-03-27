@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ training_title }}</h2>
+
+    {% if is_engineering %}
+        <h3>Инженерные тренажеры</h3>
+        <img src="/static/images/engineering_scheme.jpg" alt="Схема инженерных тренажеров">
+    {% else %}
+        <h3>Научные симуляторы</h3>
+        <img src="/static/images/science_scheme.jpg" alt="Схема научных симуляторов">
+    {% endif %}
+{% endblock %}
